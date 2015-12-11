@@ -1,14 +1,14 @@
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > sudo su #c1oudc0w
-    [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'host 10.254.0.10' #10 是container ip
+    [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'host 10.254.0.10' #10 是container ip, 自己是9
 
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > sudo su #c1oudc0w
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > WCP=$(cat /var/vcap/data/dea_next/db/instances.json | jq '.instances[0].warden_container_path' | sed 's/"//g')
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > /var/vcap/packages/warden/warden/src/wsh/wsh --socket $WCP/run/wshd.sock --user root #app container
-      [196gt6dfnmi] > tcpdump -i w-196gt6dfnmi-1 'host 10.254.0.10' #10 是container ip
+      [196gt6dfnmi] > tcpdump -i w-196gt6dfnmi-1 'host 10.254.0.10' #10 是自己 ip
     
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
