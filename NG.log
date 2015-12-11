@@ -1,0 +1,9 @@
+06:03:19.877403 IP 196gt6dfnmi.51286 > google-public-dns-a.google.com.domain: 11393+ A? docs.cloudfoundry.org. (39)
+06:03:19.877466 IP 196gt6dfnmi.51286 > google-public-dns-a.google.com.domain: 56854+ AAAA? docs.cloudfoundry.org. (39)
+06:03:20.078643 IP google-public-dns-a.google.com.domain > 196gt6dfnmi.51286: 56854 1/1/0 CNAME cloudfoundry-org-1813473376.us-east-1.elb.amazonaws.com. (187)
+06:03:20.098914 IP google-public-dns-a.google.com.domain > 196gt6dfnmi.51286: 11393 3/0/0 CNAME cloudfoundry-org-1813473376.us-east-1.elb.amazonaws.com., A 54.164.213.58, A 107.23.245.156 (140)
+06:03:20.099572 IP 196gt6dfnmi.43418 > ec2-54-164-213-58.compute-1.amazonaws.com.https: Flags [S], seq 375080852, win 29200, options [mss 1460,sackOK,TS val 19753145 ecr 0,nop,wscale 7], length 0
+06:03:20.317389 IP ec2-54-164-213-58.compute-1.amazonaws.com.https > 196gt6dfnmi.43418: Flags [S.], seq 1533308279, ack 375080853, win 17898, options [mss 8961,sackOK,TS val 1869543 ecr 19753145,nop,wscale 8], length 0
+06:03:20.317451 IP 196gt6dfnmi.43418 > ec2-54-164-213-58.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 19753199 ecr 1869543], length 0
+06:03:20.318021 IP 196gt6dfnmi.43418 > ec2-54-164-213-58.compute-1.amazonaws.com.https: Flags [P.], seq 1:326, ack 1, win 229, options [nop,nop,TS val 19753199 ecr 1869543], length 325
+06:03:20.535420 IP ec2-54-164-213-58.compute-1.amazonaws.com.https > 196gt6dfnmi.43418: Flags [.], ack 326, win 75, options [nop,nop,TS val 1869598 ecr 19753199], length 0
