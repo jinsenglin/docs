@@ -1,0 +1,73 @@
+06:01:32.588534 IP 196gt6dfnmi.42427 > google-public-dns-a.google.com.domain: 30618+ A? docs.cloudfoundry.org. (39)
+06:01:32.588607 IP 196gt6dfnmi.42427 > google-public-dns-a.google.com.domain: 16994+ AAAA? docs.cloudfoundry.org. (39)
+06:01:32.599397 IP google-public-dns-a.google.com.domain > 196gt6dfnmi.42427: 30618 3/0/0 CNAME cloudfoundry-org-1813473376.us-east-1.elb.amazonaws.com., A 107.23.245.156, A 54.164.213.58 (140)
+06:01:32.795325 IP google-public-dns-a.google.com.domain > 196gt6dfnmi.42427: 16994 1/1/0 CNAME cloudfoundry-org-1813473376.us-east-1.elb.amazonaws.com. (187)
+06:01:32.796250 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [S], seq 668894300, win 29200, options [mss 1460,sackOK,TS val 19726319 ecr 0,nop,wscale 7], length 0
+06:01:33.019891 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [S.], seq 3182134573, ack 668894301, win 17898, options [mss 8961,sackOK,TS val 1845708 ecr 19726319,nop,wscale 8], length 0
+06:01:33.019944 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 1, win 229, options [nop,nop,TS val 19726375 ecr 1845708], length 0
+06:01:33.020450 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [P.], seq 1:326, ack 1, win 229, options [nop,nop,TS val 19726375 ecr 1845708], length 325
+06:01:33.243785 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 0
+06:01:33.244304 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 1:1399, ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 1398
+06:01:33.244310 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 1399:2797, ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 1398
+06:01:33.244324 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 2797:4097, ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 1300
+06:01:33.244458 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 1399, win 251, options [nop,nop,TS val 19726431 ecr 1845764], length 0
+06:01:33.244469 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 2797, win 274, options [nop,nop,TS val 19726431 ecr 1845764], length 0
+06:01:33.244473 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 4097, win 296, options [nop,nop,TS val 19726431 ecr 1845764], length 0
+06:01:33.246186 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 4097:5495, ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 1398
+06:01:33.246192 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 5495:5845, ack 326, win 75, options [nop,nop,TS val 1845764 ecr 19726375], length 350
+06:01:33.246262 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 5495, win 319, options [nop,nop,TS val 19726431 ecr 1845764], length 0
+06:01:33.246270 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 5845, win 341, options [nop,nop,TS val 19726431 ecr 1845764], length 0
+06:01:33.248401 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [P.], seq 326:452, ack 5845, win 341, options [nop,nop,TS val 19726432 ecr 1845764], length 126
+06:01:33.471980 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 5845:6087, ack 452, win 75, options [nop,nop,TS val 1845821 ecr 19726432], length 242
+06:01:33.472279 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [P.], seq 452:642, ack 6087, win 363, options [nop,nop,TS val 19726488 ecr 1845821], length 190
+06:01:33.729637 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 6087:7485, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.729652 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 7485:8883, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.729702 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 8883, win 408, options [nop,nop,TS val 19726552 ecr 1845885], length 0
+06:01:33.729657 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 8883:10281, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.729955 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 10281:11679, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.729990 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 11679:13077, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.730037 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 11679, win 453, options [nop,nop,TS val 19726552 ecr 1845885], length 0
+06:01:33.730280 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 13077:14475, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.730294 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 14475:15873, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.730300 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 15873:17271, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.730413 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 14475, win 499, options [nop,nop,TS val 19726553 ecr 1845885], length 0
+06:01:33.730454 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 17271, win 544, options [nop,nop,TS val 19726553 ecr 1845885], length 0
+06:01:33.730540 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 17271:18669, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 1398
+06:01:33.730563 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 18669:19460, ack 642, win 79, options [nop,nop,TS val 1845885 ecr 19726488], length 791
+06:01:33.730683 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 19460, win 588, options [nop,nop,TS val 19726553 ecr 1845885], length 0
+06:01:33.952857 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 19460:20858, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952870 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 20858:22256, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952933 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 22256, win 634, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.952880 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 22256:23654, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952885 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 23654:25052, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952953 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 25052, win 679, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.952890 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 25052:26450, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952897 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 26450:27848, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726552], length 1398
+06:01:33.952970 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 27848, win 724, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.953390 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 27848:29246, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953417 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 29246:30644, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953423 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 30644:32042, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953436 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 32042:33440, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953443 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 33440:34838, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953448 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 34838:36236, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953455 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 36236:37634, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953552 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 30644, win 769, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.953594 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 33440, win 815, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.953615 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 36236, win 860, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.953688 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 37634:39032, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.953725 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 39032, win 905, options [nop,nop,TS val 19726608 ecr 1845941], length 0
+06:01:33.953693 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 39032:40430, ack 642, win 79, options [nop,nop,TS val 1845941 ecr 19726553], length 1398
+06:01:33.990474 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 40430, win 928, options [nop,nop,TS val 19726618 ecr 1845941], length 0
+06:01:34.176189 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 40430:41828, ack 642, win 79, options [nop,nop,TS val 1845997 ecr 19726608], length 1398
+06:01:34.176196 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 41828:43226, ack 642, win 79, options [nop,nop,TS val 1845997 ecr 19726608], length 1398
+06:01:34.176204 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [.], seq 43226:44624, ack 642, win 79, options [nop,nop,TS val 1845997 ecr 19726608], length 1398
+06:01:34.176209 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 44624:45720, ack 642, win 79, options [nop,nop,TS val 1845997 ecr 19726608], length 1096
+06:01:34.176336 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 41828, win 950, options [nop,nop,TS val 19726664 ecr 1845997], length 0
+06:01:34.176365 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 43226, win 973, options [nop,nop,TS val 19726664 ecr 1845997], length 0
+06:01:34.176375 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 44624, win 996, options [nop,nop,TS val 19726664 ecr 1845997], length 0
+06:01:34.176385 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [.], ack 45720, win 1017, options [nop,nop,TS val 19726664 ecr 1845997], length 0
+06:01:34.177647 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [F.], seq 642, ack 45720, win 1017, options [nop,nop,TS val 19726664 ecr 1845997], length 0
+06:01:34.400538 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [P.], seq 45720:45751, ack 643, win 79, options [nop,nop,TS val 1846053 ecr 19726664], length 31
+06:01:34.400575 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [R], seq 668894943, win 0, length 0
+06:01:34.400544 IP ec2-107-23-245-156.compute-1.amazonaws.com.https > 196gt6dfnmi.57745: Flags [F.], seq 45751, ack 643, win 79, options [nop,nop,TS val 1846053 ecr 19726664], length 0
+06:01:34.400586 IP 196gt6dfnmi.57745 > ec2-107-23-245-156.compute-1.amazonaws.com.https: Flags [R], seq 668894943, win 0, length 0
