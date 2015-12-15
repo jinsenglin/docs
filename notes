@@ -2,6 +2,8 @@
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > sudo su #c1oudc0w
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'host 10.254.0.10' #10 是container ip, 自己是9
+    OR
+    [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'port 443'
 
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
@@ -9,6 +11,8 @@
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > WCP=$(cat /var/vcap/data/dea_next/db/instances.json | jq '.instances[0].warden_container_path' | sed 's/"//g')
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > /var/vcap/packages/warden/warden/src/wsh/wsh --socket $WCP/run/wshd.sock --user root #app container
       [196gt6dfnmi] > tcpdump -i w-196gt6dfnmi-1 'host 10.254.0.10' #10 是自己 ip
+      OR
+      [196gt6dfnmi] > tcpdump -i w-196gt6dfnmi-1 'port 443'
     
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
@@ -16,6 +20,8 @@
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > WCP=$(cat /var/vcap/data/dea_next/db/instances.json | jq '.instances[0].warden_container_path' | sed 's/"//g')
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > /var/vcap/packages/warden/warden/src/wsh/wsh --socket $WCP/run/wshd.sock --user root #app container
       [196gt6dfnmi] > wget https://docs.cloudfoundry.org/devguide/deploy-apps/large-app-deploy.html
+      OR
+      [196gt6dfnmi] > while true; do wget https://pivotal.io/ --no-check-certificate -T 10; sleep 10; done
       
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
@@ -23,5 +29,22 @@
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > WCP=$(cat /var/vcap/data/dea_next/db/instances.json | jq '.instances[0].warden_container_path' | sed 's/"//g')
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > /var/vcap/packages/warden/warden/src/wsh/wsh --socket $WCP/run/wshd.sock --user root #app container
       [196gt6dfnmi] > traceroute 54.164.213.58 #docs.cloudfoundry.org ip
+
+RESULT
+docs.cloudfoundry.org => 107.23.245.156 OK
+docs.cloudfoundry.org => 54.164.213.58 FAIL!
+
+pivotal.io => 52.22.122.48 FAIL!
+pivotal.io => 54.236.116.26 OK
+
+download.run.pivotal.io => 54.182.1.96 FAIL!
+download.run.pivotal.io => 54.182.2.132 FAIL!
+download.run.pivotal.io => 54.182.4.188 OK , FAIL!
+download.run.pivotal.io => 54.182.4.205 OK , FAIL!
+download.run.pivotal.io => 54.182.4.221 FAIL!
+download.run.pivotal.io => 54.182.4.224 FAIL!
+download.run.pivotal.io => 54.182.4.229 FAIL!
+download.run.pivotal.io => 54.182.5.18 FAIL!
+
 
 https://docs.cloudfoundry.org/running/troubleshooting/troubleshooting-apps.html
