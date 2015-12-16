@@ -68,6 +68,7 @@
     [INWIN-compute] > tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.pcap
     [INWIN-compute] > tcpdump -i qbrbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.qbrbfe96030-f8.pcap
     NOTE: qbrbfe96030-f8 is a bridge with two interfaces (qvbbfe96030-f8 and tapbfe96030-f8)
+    NOTE: in file /etc/libvirt/qemu/instance-00000062.xml, qbrbfe96030-f8 is the source bridge, tapbfe96030-f8 is the target dev
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
