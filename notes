@@ -36,26 +36,31 @@
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
   [HP-controller] > tcpdump -i any host 52.22.122.48 and port 443
+  RESULT: Captured packets
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
   [HP-controller] > ssh ASUS-compute
     [ASUS-compute] > tcpdump -i any host 52.22.122.48 and port 443
+    RESULT: No captured packets
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
   [HP-controller] > ssh TYAN2-compute
     [TYAN2-compute] > tcpdump -i any host 52.22.122.48 and port 443
+    RESULT: No captured packets
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
   [HP-controller] > ssh INWIN-compute
     [INWIN-compute] > tcpdump -i any host 52.22.122.48 and port 443
+    RESULT: Captured packets
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
   [HP-controller] > ssh TYAN1-compute
     [TYAN1-compute] > tcpdump -i any host 52.22.122.48 and port 443
+    RESULT: No captured packets
 
 RESULT
 docs.cloudfoundry.org => 107.23.245.156 OK
