@@ -45,6 +45,7 @@
   RESULT: [TCP Retransmission] Server Hello
   [HP-controller] > tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w HP-controller.pivotal.io.pcap
   [HP-controller] > tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w HP-controller.pivotal.io.eth3.pcap
+  NOTE: br-ex is a bridge with 4 interfaces (eth3, p_ff798dba-0, v_public, v_vrouter_pub)
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
