@@ -37,6 +37,7 @@
   [HP-controller] > cat /etc/hosts
   [HP-controller] > tcpdump -i any host 52.22.122.48 and port 443
   RESULT: Captured packets
+  [HP-controller] > tcpdump -i any host 52.22.122.48 and port 443 -w HP-controller.pcap
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
@@ -55,6 +56,7 @@
   [HP-controller] > ssh INWIN-compute
     [INWIN-compute] > tcpdump -i any host 52.22.122.48 and port 443
     RESULT: Captured packets
+    [INWIN-compute] > tcpdump -i any host 52.22.122.48 and port 443 -w INWIN-compute.pcap
 
 [jinsenglin.121004-NB1-CSSI] > ssh -o StrictHostKeyChecking=no root@10.5.50.6 #openstack controller physical machine (PASS: r00tme)
   [HP-controller] > cat /etc/hosts
