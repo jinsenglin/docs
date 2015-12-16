@@ -5,6 +5,9 @@
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'host 10.254.0.10' #10 是container ip, 自己是9
     OR
     [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i w-196gt6dfnmi-0 'port 443'
+    OR
+    [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i any host 52.22.122.48 and port 443
+    [344b874c-bc7a-41ab-8dc3-cee5864b49df] > tcpdump -i any host 52.22.122.48 and port 443 -w CF-RUNNER.pcap
 
 [jinsenglin.121004-NB1-CSSI] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@10.5.50.140 #cf haproxy/0
   [4dd5161-c962-48c6-9bfb-4ff8b1d0119e] > ssh -i bosh.pem -o StrictHostKeyChecking=no vcap@192.168.0.113 #cf runner/0
