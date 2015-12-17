@@ -193,11 +193,11 @@ http://docs.openstack.org/openstack-ops/content/network_troubleshooting.html
 [switch] > enable "jumbo frame" (step 4/4)
 
 
-[Container].w-196spv23c6m-1 <=> 
-[VM].eth0 <=> 
-[INWIN-compute].eth2.103 = [INWIN-compute].br-mesh <=>
+[Container].w-196spv23c6m-1 (10.254.0.2 MTU 1500) <=> 
+[VM].eth0 (192.168.0.113 MTU 1500)<=> 
+[INWIN-compute].eth2.103 (MTU 1500) = [INWIN-compute].br-mesh (192.168.2.5 MTU 1500) <=>
 [switch] <=>
-[HP-controller].eth0.103 = [HP-controller].br-mesh <=> 
-[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qr-c85b8d9c-a2 <=>
-[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qg-35101be5-3b <=>
-[HP-controller].eth3 = [HP-controller].br-ex
+[HP-controller].eth0.103 (MTU 1600) = [HP-controller].br-mesh (192.168.2.3 MTU 1600) <=> 
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qr-c85b8d9c-a2 (192.168.0.1 MTU 1600) <=>
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qg-35101be5-3b (10.5.50.131 MTU 1450) <=>
+[HP-controller].eth3 (MTU 1500) = [HP-controller].br-ex (10.5.50.6 MTU 1500)
