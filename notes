@@ -201,3 +201,7 @@ http://docs.openstack.org/openstack-ops/content/network_troubleshooting.html
 [HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qr-c85b8d9c-a2 (192.168.0.1 MTU 1600) <=>
 [HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qg-35101be5-3b (10.5.50.131 MTU 1450) <=>
 [HP-controller].eth3 (MTU 1500) = [HP-controller].br-ex (10.5.50.6 MTU 1500)
+[switch] <=>
+[firewall] <=>
+[internet] <=>
+[pivotal.io] <=>
