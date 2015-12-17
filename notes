@@ -188,5 +188,5 @@ http://docs.openstack.org/openstack-ops/content/network_troubleshooting.html
 [HP-controller] > ip netns list # list all network namespace
 [HP-controller] > ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash # enter router network namespace
   [HP-controller] > enlarge MTU of the 192.168.0.1 interface from 1450 to 1600
-[HP-controller] > enlarge MTU of the 192.168.2.3 interface from 1500 to 1600 # eth0.103
 [HP-controller] > enlarge MTU of the 192.168.2.3 interface from 1500 to 1600 # br-mesh
+[HP-controller] > enlarge MTU of eth0.103 the interface
