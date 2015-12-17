@@ -187,6 +187,17 @@ http://docs.openstack.org/openstack-ops/content/network_troubleshooting.html
 
 [HP-controller] > ip netns list # list all network namespace
 [HP-controller] > ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash # enter router network namespace
-  [HP-controller] > enlarge MTU of the 192.168.0.1 interface from 1450 to 1600
-[HP-controller] > enlarge MTU of the 192.168.2.3 interface from 1500 to 1600 # br-mesh
-[HP-controller] > enlarge MTU of eth0.103 the interface
+  [HP-controller] > enlarge MTU of the 192.168.0.1 interface from 1450 to 1600 (step 1/4)
+[HP-controller] > enlarge MTU of the 192.168.2.3 interface from 1500 to 1600 # br-mesh (step 2/4)
+[HP-controller] > enlarge MTU of the eth0.103 interface from 1500 to 1600 (step 3/4)
+[switch] > enable "jumbo frame" (step 4/4)
+
+
+[Container].w-196spv23c6m-1 <=> 
+[VM].eth0 <=> 
+[INWIN-compute].eth2.103 = [INWIN-compute].br-mesh <=>
+[switch] <=>
+[HP-controller].eth0.103 = [HP-controller].br-mesh <=> 
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qr-c85b8d9c-a2 <=>
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qg-35101be5-3b <=>
+[HP-controller].eth3 = [HP-controller].br-ex
