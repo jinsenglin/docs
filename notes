@@ -47,3 +47,6 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 
 http://unix.stackexchange.com/questions/40560/how-to-know-if-a-network-interface-is-tap-tun-bridge-or-physical
 The answer is to run ethtool -i tunOrTapDeviceName.
+
+Hub vs. Bridge vs. Switch
+https://i.ytimg.com/vi/Xmwmezk75Tk/maxresdefault.jpg
