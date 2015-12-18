@@ -8,7 +8,7 @@ root@705-ubuntu:/home/jinseng# ip link
 [ For KVM ]
 4: virbr0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default
     link/ether b2:47:7d:c1:49:b7 brd ff:ff:ff:ff:ff:ff
-[ For VMware ]
+[ For VMware Player ]
 5: vmnet1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 1000
     link/ether 00:50:56:c0:00:01 brd ff:ff:ff:ff:ff:ff
 6: vmnet8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 1000
