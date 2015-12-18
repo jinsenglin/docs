@@ -52,4 +52,6 @@ Hub vs. Bridge vs. Switch
 https://i.ytimg.com/vi/Xmwmezk75Tk/maxresdefault.jpg
 
 https://en.wikipedia.org/wiki/TUN/TAP
-TUN (namely network TUNnel) simulates a network layer device and it operates with layer 3 packets like IP packets. TAP (namely network tap) simulates a link layer device and it operates with layer 2 packets like Ethernet frames. TUN is used with routing, while TAP is used for creating a network bridge.
+TUN (namely network TUNnel) simulates a network layer device and it operates with layer 3 packets like IP packets.
+TAP (namely network tap) simulates a link layer device and it operates with layer 2 packets like Ethernet frames.
+TUN is used with routing, while TAP is used for creating a network bridge.
