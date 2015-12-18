@@ -1,0 +1,26 @@
+To configure the DHCP agent
+
+The DHCP agent provides DHCP services for virtual networks.
+
+(Optional)
+
+Tunneling protocols such as GRE include additional packet headers that increase overhead and decrease space available for the payload or user data. Without knowledge of the virtual network infrastructure, instances attempt to send packets using the default Ethernet maximum transmission unit (MTU) of 1500 bytes. Internet protocol (IP) networks contain the path MTU discovery (PMTUD) mechanism to detect end-to-end MTU and adjust packet size accordingly. However, some operating systems and networks block or otherwise lack support for PMTUD causing performance degradation or connectivity failure.
+
+Ideally, you can prevent these problems by enabling jumbo frames on the physical network that contains your tenant virtual networks. Jumbo frames support MTUs up to approximately 9000 bytes which negates the impact of GRE overhead on virtual networks. However, many network devices lack support for jumbo frames and OpenStack administrators often lack control over network infrastructure. Given the latter complications, you can also prevent MTU problems by reducing the instance MTU to account for GRE overhead. Determining the proper MTU value often takes experimentation, but 1454 bytes works in most environments. You can configure the DHCP server that assigns IP addresses to your instances to also adjust the MTU.
+
+========
+
+http://docs.openstack.org/juno/install-guide/install/apt-debian/content/neutron-network-node.html
+
+========
+
+http://docs.openstack.org/kilo/config-reference/content/networking-options-plugins-ml2.html
+
+========
+
+Configure MTU for VXLAN tunnelling
+Specific MTU configuration is necessary for VXLAN to function as expected:
+
+One option is to increase the MTU value of the physical interface and physical switch fabric by at least 50 bytes. For example, increase the MTU value to 1550. This value enables an automatic 50-byte MTU difference between the physical interface (1500) and the VXLAN interface (automatically 1500-50 = 1450). An MTU value of 1450 causes issues when virtual machine taps are configured at an MTU value of 1500.
+
+Another option is to decrease the virtual Ethernet devices' MTU. Set the network_device_mtu option to 1450 in the neutron.conf file, and set all guest virtual machines' MTU to the same value by using a DHCP option. For information about how to use this option, see Configure OVS plug-in.
