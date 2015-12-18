@@ -1,0 +1,519 @@
+    1  exit
+    2  cat /etc/hosts
+    3  tcpdump -i any
+    4  tcpdump -i any port 443
+    5  exit
+    6  ssh TYAN1-compute
+    7  exit
+    8  ssh TYAN2-compute
+    9  exit
+   10  ssh ASUS-compute
+   11  exit
+   12  cat /etc/hosts
+   13  ssh ASUS-compute
+   14  tcpdump -i any host 52-22-122-48 and port 443
+   15  tcpdump -i any host 52.22.122.48 and port 443
+   16  tcpdump -i any host 52.22.122.48 and port 443 -w HP-controller.pcap
+   17  scp HP-controller.pcap jinseng@705-ubuntu:/tmp
+   18  scp HP-controller.pcap jinseng@140.92.24.37:/tmp
+   19  tcpdump -i any host 52.22.122.48 and port 443
+   20  ifconfig
+   21  ifconfig | grep 10
+   22  ifconfig | grep 10.
+   23  ifconfig | grep 10\.
+   24  ifconfig | grep 10.5
+   25  tcpdump -i any host 52.22.122.48 and port 443
+   26  ifconfig | grep 192.168
+   27  ifconfig | less
+   28  tcpdump -i any host 52.22.122.48 and port 443
+   29  ifconfig | grep "fa:16:3e:05:c3:d0"
+   30  tcpdump -i any host 52.22.122.48 and port 443
+   31  ifconfig
+   32  ifconfig | grep 192.168
+   33  ifconfig | grep 10.5.50
+   34  ifconfig | grep 10.5.20
+   35  ifconfig | grep 10.5
+   36  ifconfig | grep "inet addr"
+   37  ifconfig | grep "vrouter"
+   38  ifconfig | grep "fa:16:3e:03:9f:bc"
+   39  ifconfig
+   40  ifconfig -a
+   41  ifconfig -a | wc -l
+   42  ifconfig | wc -l
+   43  ifconfig -a | grep "fa:16:3e:14:8a:8b"
+   44  ovs-vsctl show
+   45  route -n
+   46  ls
+   47  history | grep pcap
+   48  tcpdump -i any host 54.236.116.26 and port 443 -w HP-controller.54.236.116.26.pcap
+   49  scp HP-controller.54.236.116.26.pcap jinseng@140.92.24.37:/tmp
+   50  tcpdump -i any host 54.236.116.26 and port 443 -w HP-controller.54.236.116.26.vm.pcap
+   51  rm HP-controller.54.236.116.26.vm.pcap 
+   52  tcpdump -i any host 54.236.116.26 and port 443 -w HP-controller.54.236.116.26.vm.pcap
+   53  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.54.236.116.26.vm.pcap
+   54  ls
+   55  rm HP-controller.54.236.116.26.vm.pcap 
+   56  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.pivotal.io.vm.pcap
+   57  scp HP-controller.pivotal.io.vm.pcap jinseng@140.92.24.37:/tmp
+   58  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.pivotal.io.inwin.pcap
+   59  scp HP-controller.pivotal.io.inwin.pcap jinseng@140.92.24.37:/tmp
+   60  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.pivotal.io.hp.pcap
+   61  scp HP-controller.pivotal.io.hp.pcap jinseng@140.92.24.37:/tmp
+   62  ssh INWIN-compute
+   63  ls
+   64  vi getting-pivotal.io
+   65  chmod +x getting-pivotal.io 
+   66  ./getting-pivotal.io 
+   67  ssh INWIN-compute
+   68  ip a
+   69  ip a | grep 192
+   70  cat /etc/hosts
+   71  ping ASUS-compute
+   72  ip a
+   73  ip a | grep 10.5
+   74  ifconfig | grep 10.5
+   75  exit
+   76  wget https://pivotal.io
+   77  rm index.html*
+   78  ls
+   79  wget www.google.com
+   80  wget https://pivotal.io
+   81  ovs-vsctl show
+   82  ovs-vsctl list br
+   83  ip a
+   84  ip a | grep state UP
+   85  clear; ip a | grep "state UP"
+   86  clear; ip a | grep "state UP" | wc -l
+   87  clear; ip a | grep "state UP"
+   88  exit
+   89  tcpdump -i any tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   90  tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   91  tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443 -A
+   92  tcpdump -vi any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   93  tcpdump -vvi any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   94  tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   95  route -n
+   96  tcpdump -i br-ex 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   97  ip a
+   98  tcpdump -i eth0 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   99  tcpdump -i eth1 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  100  tcpdump -i eth2 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  101  ip a | grep s
+  102  ip a | grep state UP
+  103  ip a | grep "state UP"
+  104  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  105  route -n
+  106  brctl show
+  107  ifconfig | grep 10.50
+  108  ifconfig | grep 10.5.50
+  109  tcpdump -i p_ff798dba-0 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  110  tcpdump -i v_public 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  111  tcpdump -i v_vrouter_pub 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  112  ovs-ctl show
+  113  ovs-vsctl show
+  114  tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  115  tcpdump -i any port 80
+  116  tcpdump -i any port 443
+  117  man tcpdump
+  118  tcpdump -D
+  119  man tcpdump
+  120  tcpdump -l -i any port 443 | tee dat
+  121  ls
+  122  rm dat
+  123  man tcpdump
+  124  ls
+  125  route -n
+  126  tcpdump -D
+  127  ovs-vsctl list br
+  128  ovs-vsctl list br | grep _uuid
+  129  brctl show
+  130  history | grep pcap
+  131  tcpdump -i br-ex 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.pivotal.io.hp.br-ex.pcap
+  132  scp HP-controller.pivotal.io.hp.br-ex.pcap jinseng@705-ubuntu:/tmp
+  133  scp HP-controller.pivotal.io.hp.br-ex.pcap jinseng@140.92.24.37:/tmp
+  134  ls -l
+  135  brctl show
+  136  tcpdump -i eth3 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w HP-controller.pivotal.io.hp.eth3.pcap
+  137  scp HP-controller.pivotal.io.hp.eth3.pcap jinseng@140.92.24.37:/tmp
+  138  brctl show
+  139  ovs-vsctl show
+  140  ovs-vsctl list br
+  141  brctl show
+  142  ifconfig eth3
+  143  ifconfig br-ex
+  144  tcpdump -i eth2 'host 54.236.116.26 or host 52.22.122.48' and port 443
+  145  tcpdump -i eth1 'host 54.236.116.26 or host 52.22.122.48' and port 443
+  146  tcpdump -i 'host 54.236.116.26 or host 52.22.122.48' and port 443
+  147  brctl show
+  148  ovs-vsctl show
+  149  cat /etc/hosts
+  150  ssh INWIN-compute
+  151  ip a
+  152  ip a | grep 10
+  153  ip a | grep 10.5
+  154  ii]i]][2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~[2~
+  155  route -n
+  156  ip a
+  157  route -n
+  158  ssh INWIN-compute
+  159  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w HP-controller.pivotal.io.eth3.pcap
+  160  scp HP-controller.pivotal.io.eth3.pcap jinseng@140.92.24.37:/tmp
+  161  route -n
+  162  brctl show
+  163  brctl showbr br-ex
+  164  brctl
+  165  brctl showmacs br-ex
+  166  ssh INWIN-compute
+  167  l3-agent-list-hosting-router
+  168  neutron l3-agent-list-hosting-router
+  169  ls
+  170  ovs-vsctl show
+  171  ip netns
+  172  ovs-dpctl
+  173  ovs-dpctl show
+  174  iptables -L
+  175  ip netns list
+  176  ip netns exec qdhcp-2c9a5c55-c159-4906-adff-baece7bd94b2 route -n
+  177  ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d route -n
+  178  ip netns exec qrouter-be1845b0-d9f2-4e5c-818a-1cca3dcedbdc route -n
+  179  ip netns exec qrouter-abe8314a-10d9-4d72-be20-85920dba1456 route -n
+  180  ip netns exec qdhcp-571f3006-9fdb-46b2-a242-36dc68fbe9f0 route -n
+  181  ip netns exec haproxy route -n
+  182  ip netns exec vrouter route -n
+  183  ip netns list
+  184  ovs-vsctl show
+  185  ovs-dpctl show
+  186  ovs-dpctl shows
+  187  vim /etc/ssh/sshd_config 
+  188  exit
+  189  cat /etc/hosts
+  190  ssh INWIN-compute
+  191  exit
+  192  ssh INWIN-compute
+  193  ping INWIN-compute
+  194  ssh INWIN-compute
+  195  exit
+  196  ovs-vsctl show
+  197  brctl show
+  198  ifconfig br-ex
+  199  ifconfig br-ex mtu 1600 up
+  200  ifconfig eth3 mtu 1600
+  201  ifconfig br-ex mtu 1600
+  202  ifconfig eth3
+  203  ifconfig eth1 1600
+  204  ifconfig eth1
+  205  ifconfig eth0 10.20.0.29
+  206  ifconfig eth0 0
+  207  ifconfig eth1 10.20.0.29
+  208  ifconfig eth1
+  209  ifconfig eth0
+  210  ifconfig eth0 mtu 1600
+  211  ifconfig eth1 mtu 1600
+  212  ifconfig eth0.101 mtu 1600
+  213  ifconfig eth0.102 mtu 1600
+  214  ifconfig eth0.103 mtu 1600
+  215  ifconfig  | grep mtu
+  216  ifconfig
+  217  ifconfig | grep MTU
+  218  ifconfig
+  219  ifconfig br-ex mtu 1600
+  220  brctl show
+  221  ifconfig p_ff798dba-0 mtu 1600
+  222  ifconfig v_public mtu 1600
+  223  ifconfig v_vrouter_pub mtu 1600
+  224  ifconfig mgmt-conntrd mtu 1600
+  225  ifconfig v_management mtu 1600
+  226  ifconfig v_vrouter mtu 1600
+  227  ifconfig | grep MTU
+  228  exit
+  229  ssh TYAN1-compute
+  230  ssh INWIN-compute
+  231  ifconfig
+  232  cat /etc/hosts
+  233  ssh TYAN2-compute
+  234  ssh TYAN1-compute
+  235  cat /etc/hosts
+  236  ssh INWIN-compute
+  237  ssh root@10.5.50.4
+  238  ping 10.5.50.4
+  239  ssh root@10.5.50.4
+  240  ifconfig
+  241  ifconfig | grep MTU
+  242  ssh TYAN1-compute
+  243  ssh INWIN-compute
+  244  ifconfig | grep MTU
+  245  ssh INWIN-compute
+  246  ifconfig
+  247  brctl show
+  248  ifconfig p_ff798dba-0
+  249  ifconfig p_ff798dba-0 mtu 65000
+  250  ifconfig | grep MTU
+  251  ssh INWIN-compute
+  252  brctl show
+  253  ifconfig br-ex mtu 1500
+  254  ifconfig eth3 mtu 1500
+  255  ifconfig | grep MTU
+  256  brctl show
+  257  ifconfig v_public mtu 1500
+  258  ifconfig v_vrouter_pub mtu 1500
+  259  ifconfig eth1 mtu 1500
+  260  ifconfig eth0 mtu 1500
+  261  ifconfig eth0.101 mtu 1500
+  262  ifconfig eth0.102 mtu 1500
+  263  ifconfig eth0.103 mtu 1500
+  264  ifconfig | grep MTU
+  265  brctl show
+  266  ifconfig mgmt-conntrd mtu 1500
+  267  ifconfig v_management mtu 1500
+  268  ifconfig v_vrouter mtu 1500
+  269  ifconfig | grep MTU
+  270  cat /etc/hosts
+  271  ssh INWIN-compute
+  272  ifconfig eth3
+  273  ifconfig | grep dropped
+  274  ifconfig eth3 | grep dropped
+  275  ifconfig | less
+  276  ifconfig eth2 | grep dropped
+  277  ifconfig eth1 | grep dropped
+  278  ifconfig eth3 | grep dropped
+  279  ifconfig eth1 | grep dropped
+  280  ifconfig eth3 | grep dropped
+  281  brctl show
+  282  ifconfig eth3
+  283  ifconfig eth3 | grep dropped
+  284  ifconfig eth3 mtu 1514
+  285  ifconfig eth3 | grep dropped
+  286  ifconfig eth3 mtu 1500
+  287  ifconfig eth3
+  288  ifconfig | less
+  289  brctl show
+  290  ifconfig br-ex
+  291  ifconfig | grep dropped
+  292  ifconfig | grep dropped | grep -v dropped:0
+  293  clearifconfig | grep dropped | grep -v dropped:0
+  294  clear; ifconfig | grep dropped | grep -v dropped:0
+  295  ifconfig | grep dropped | grep -v dropped:0
+  296  while true; do ifconfig | grep dropped | grep -v dropped:0; sleep 5; done
+  297  clear
+  298  while true; do date; ifconfig | grep dropped | grep -v dropped:0; sleep 10; done
+  299  tcpdump -i any
+  300  ssh INWIN-compute
+  301  ip a
+  302  tcpdump -i b_vrouter_pub
+  303  tcpdump -i b_vrouter
+  304  ip a
+  305  exit
+  306  ip a
+  307  tcpdump -i qg-35101be5-3b
+  308  tcpdump -i qg-35101be5-3b -w qg-35101be5-3bdump
+  309  tcpdump -i qg-35101be5-3b ip src 52.22.122.48 -w qg-35101be5-3bdump
+  310  mv qg-35101be5-3bdump qg-35101be5-3bdump.pcap
+  311  scp qg-35101be5-3bdump.pcap jinseng@140.92.24.37:/tmp
+  312  ifconfig qg-35101be5-3b
+  313  route -n
+  314  tcpdump -i qr-c85b8d9c-a2 -w qr-c85b8d9c-a2dump.pcap
+  315  scp qr-c85b8d9c-a2dump.pcap jinseng@14
+  316  ifconfig qr-c85b8d9c-a2
+  317  ip a
+  318  route -n
+  319  ovs-vsctl show | 
+  320  route -n
+  321  ovs-vsctl show | grep qg-35101be5-3b
+  322  ovs-vsctl show | less
+  323  ovs-ofctl dump-flows br-floating
+  324  ifconfig qg-35101be5-3b
+  325  ovs-ofctl dump-flows br-floating
+  326  ovs-vsctl show | less
+  327  ifconfig qg-35101be5-3b
+  328  ovs-vsctl show | less
+  329  ifconfig qg-5f6e00dc-04
+  330  route -n
+  331  ovs-vsctl show | less
+  332  ovs-ofctl dump-flows br-int | less
+  333  exit
+  334  ovs-vsctl show
+  335  ovs-ofctl dump-flows br-tun
+  336  ovs-ofctl dump-flows br-tun | less
+  337  route -n
+  338  ifconfig qg-35101be5-3b
+  339  ifconfig qr-c85b8d9c-a2
+  340  tcpdump -i qr-c85b8d9c-a2
+  341  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113
+  342  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113 -nnn
+  343  iptables -L
+  344  iptables -t 
+  345  iptables -t neutron-l3-agent-INPUT
+  346  iptables -t 
+  347  iptables -L
+  348  iptables -t nat
+  349  iptables -t nat -L
+  350  ifconfig
+  351  ifconfig qr-c85b8d9c-a2 mtu 1400
+  352  ifconfig qg-35101be5-3b mtu 1400
+  353  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113 -nnn 
+  354  ifconfig qg-35101be5-3b mtu 1600
+  355  ifconfig qr-c85b8d9c-a2 mtu 1600
+  356  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113 -nnn 
+  357  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113 -nnn -w qr-c85b8d9c-a2dump2
+  358  scp qr-c85b8d9c-a2dump2 jinseng@140.92.24.37:/tmp
+  359  mv qr-c85b8d9c-a2dump2 qr-c85b8d9c-a2dump2.pcap
+  360  scp qr-c85b8d9c-a2dump2.pcap  jinseng@140.92.24.37:/tmp
+  361  ifconfig | grep MTU
+  362  ifconfig
+  363  history
+  364  tcpdump -i qr-c85b8d9c-a2 ip dst 192.168.0.113 -nnn
+  365  tcpdump -i eth3 host 52.22.122.48
+  366  ifconfig
+  367  tcpdump -i qg-35101be5-3b host 52.22.122.48
+  368  ps -elf | grep tcpdu
+  369  exit
+  370  tcpdump -i qg-35101be5-3b host 52.22.122.48 host 52.22.122.48 and port 443
+  371  tcpdump -i qg-35101be5-3b host 52.22.122.48 and port 443
+  372  ifconfig
+  373  tcpdump -i qr-c85b8d9c-a2 host 52.22.122.48 and port 443
+  374  ifconfig
+  375  ovs-ofctl dump-flows br-int
+  376  ifconfig
+  377  exit
+  378  ssh ASUS-compute
+  379  ssh TYAN2-compute
+  380  ssh TYAN1-compute
+  381  exit
+  382  ifconfig
+  383  ifconfig qg-35101be5-3b mtu 1450
+  384  ifconfig
+  385  ifconfig qr-c85b8d9c-a2 mtu 1450
+  386  ifconfig qr-c85b8d9c-a2 mtu 1600
+  387  ifconfig
+  388  exit
+  389  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w xxxx.pcap
+  390  scp xxxx.pcap jinseng@140.92.24.37:/tmp
+  391  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w xxxx02.pcap
+  392  scp xxxx02.pcap jinseng@140.92.24.37:/tmp
+  393  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  394  ifconfig
+  395  tcpdump -i eth0.103 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  396  tcpdump -i eth0.103
+  397  tcpdump -i eth0.103 -w hp-controller.eth0.103.pcap
+  398  scp hp-controller.eth0.103.pcap jinseng@140.92.24.37:/tmp
+  399  ifconfig eth0.103
+  400  brctl show
+  401  ifconfig br-mesh
+  402  ovs-vsctl show
+  403  ovs-ofctl dump-flows br-int
+  404  ovs-ofctl dump-flows br-tun
+  405  ovs-ofctl dump-flows br-tun | grep 52.22.122.48
+  406  ovs-ofctl dump-flows br-tun | less
+  407  ovs-ofctl dump-flows br-int
+  408  ovs-ofctl show br-tun
+  409  ovs-ofctl dump-flows br-tun | less 
+  410  ovs-ofctl dump-flows br-int
+  411  ovs-ofctl dump-flows br-tun | less 
+  412  ovs-ofctl show br-tun 
+  413  ovs-vsctl show
+  414  ovs-vsctl show | less
+  415  brctl show
+  416  ifconfig br-mesh
+  417  tcpdump -i br-mesh host ip dest 192.168.2.5
+  418  tcpdump -i br-mesh ip dest 192.168.2.5
+  419  tcpdump -i br-mesh ip dst 192.168.2.5
+  420  tcpdump -i br-mesh ip dst 192.168.2.5 -w hp-controller.br-mesh.pcap
+  421  scp hp-controller.br-mesh.pcap jinseng@140.92.24.37:/tmp
+  422  ifconfig br-mesh
+  423  brctl show
+  424  ovs-vsctl show
+  425  ifconfig vxlan-c0a80205
+  426  ip netns list
+  427  ifconfig
+  428  ip netns list
+  429  ip netns exec vrouter ip a
+  430  ip netns exec haproxy ip a
+  431  ip netns list
+  432  ovs-ofctl dump-flows br-tun
+  433  ovs-vsctl show
+  434  ifconfig patch-tun
+  435  ovs-ofctl dump-flows br-tun | less
+  436  ovs-ofctl dump-flows br-tun | grep   cookie=0x97a2d47a7434fbf
+  437  ovs-ofctl dump-flows br-tun | grep c2:ca
+  438  ovs-ofctl dump-flows br-tun | grep   cookie=0x97a2d47a7434fbf
+  439  ovs-ofctl dump-flows br-tun | grep c2:ca
+  440  ovs-vsctl show
+  441  ovs-vsctl show | less
+  442  brctl show
+  443  ifconfig br-mesh
+  444  ifconfig  br-mesh mtu 1600
+  445  ifconfig br-mesh mtu 1600
+  446  ifconfig eth0
+  447  ifconfig eth0 mtu 1600
+  448  tcpdump -i eth0 ip src 192.168.2.3
+  449  ifconfig eth0.10
+  450  ifconfig eth0.103
+  451  tcpdump -i eth0 ip src 192.168.2.3
+  452  tcpdump -i eth0 ip src 192.168.2.3 -w hp-controller.eth0.pcap
+  453  scp hp-controller.eth0.pcap jinseng@140.92.24.37:/tmp
+  454  tcpdump -i eth0 host 52.22.122.48 192.168.2.3
+  455  tcpdump -i eth0 host 52.22.122.48
+  456  tcpdump -i eth0 ip src 192.168.2.3
+  457  cat /etc/hosts
+  458  ovs-vsctl show
+  459  ovs-ofctl dump-flows br-tun | grep c2:ca
+  460  ovs-ofctl show br-tun
+  461  tcpdump -i eth0 ip src 192.168.2.3
+  462  tcpdump -i eth0 ip dst 192.168.2.5
+  463  tcpdump -i eth0 ip dst 192.168.2.5 and ip src 192.168.2.3
+  464  ifconfig eth0
+  465  ifconfig eth0.*
+  466  ifconfig 
+  467  brctl show
+  468  ifcofig eth0.103 mtu 1600
+  469  ifconfig eth0.103 mtu 1600
+  470  tcpdump -i eth0 ip dst 192.168.2.5 and ip src 192.168.2.3
+  471  tcpdump -i eth0.103 -w hp-controller.eth0.103.pcap
+  472  scp hp-controller.eth0.103.pcap jinseng@140.92.24.37:/tmp
+  473  ifconfig | less
+  474  ifconfig br-mesh
+  475  ifconfig eth0.103
+  476  ifconfig
+  477  brctl show
+  478  ifconfig eth3
+  479  ifconfig br-ex
+  480  ifconfig eth0.103
+  481  ifconfig br-mesh
+  482  ifconfig br-ex
+  483  ifconfig eth3
+  484  exit
+  485  ifconfig
+  486  exit
+  487  ifconfig
+  488  ifconfig | less
+  489  ovs-vsctl show
+  490  ovs-vsctl show | less
+  491  ifconfig br-int
+  492  brctl show
+  493  ifconfig br-ex
+  494  route -n
+  495  ifconfig p_ff798dba-0
+  496  ifconfig v_public
+  497  ifconfig  
+  498  ifconfig   
+  499  ip netns list
+  500  ip netns exec vrouter ip a
+  501  ip netns exec vrouter route -n
+  502  ip netns exec vrouter bash
+  503  ip netns list
+  504  ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash
+  505  ovs-ofctl dump-flows br-int
+  506  ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash
+  507  ip netns list
+  508  ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash
+  509  exit
+  510  exit
+  511  ip a
+  512  cat /etc/hosts
+  513  ssh ASUS-compute
+  514  cat /etc/hosts
+  515  ssh TYAN2-compute
+  516  ssh TYAN1-compute
+  517  history | wc -l
+  518  history | less
+  519  history > hp-controller.history

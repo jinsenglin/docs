@@ -1,0 +1,272 @@
+    1  ip a | grep 10.5
+    2  ifconfig | grep 10.5
+    3  ovs-vsctl show
+    4  ping 192.169.0.2
+    5  exit
+    6  ls
+    7  vi getting-pivotal.io
+    8  chmod +x getting-pivotal.io 
+    9  ./getting-pivotal.io 
+   10  exit
+   11  tcpdump -i any host 52.22.122.48 and port 443
+   12  tcpdump -i any host 52.22.122.48 and port 443 -w INWIN-compute.pcap
+   13  scp INWIN-compute.pcap jinseng@140.92.24.37:/tmp
+   14  tcpdump -i any host 52.22.122.48 and port 443
+   15  ifconfig
+   16  ifconfig | grep 10.5
+   17  tcpdump -i any host 52.22.122.48 and port 443
+   18  ifconfig
+   19  ifconfig | grep 192.168
+   20  ifconfig | grep "fa:16:3e:05:c3:d0"
+   21  tcpdump -i any host 52.22.122.48 and port 443
+   22  ifconfig
+   23  ifconfig | grep "fa:16:3e:05:c3:d0"
+   24  ifconfig | grep "fa:16:3e:14:8a:8b"
+   25  ifconfig -a | grep "fa:16:3e:14:8a:8b"
+   26  ifconfig -a
+   27  ovs-vsctl show
+   28  ovs-appctl show
+   29  route -n
+   30  ip a
+   31  ip a | grep state
+   32  brctl show
+   33  ovs-vsctl show
+   34  ip a
+   35  ip a | grep br
+   36  ip a | grep mtu
+   37  clear
+   38  ip a | grep mtu
+   39  ls  /etc/libvirt/qemu
+   40  less  /etc/libvirt/qemu/instance-0000005c.xml 
+   41  grep 192.168.0  /etc/libvirt/qemu/instance-0000005c.xml 
+   42  grep 192.168.0  /etc/libvirt/qemu/*.xml 
+   43  less  /etc/libvirt/qemu/instance-0000005c.xml 
+   44  virsh virsh list --all
+   45  virsh list --all
+   46  virsh
+   47  less  /etc/libvirt/qemu/instance-00000062.xml 
+   48  ip a | grep tapbfe96030-f8
+   49  less  /etc/libvirt/qemu/instance-00000062.xml 
+   50  ip a | grep qbrbfe96030-f8
+   51  brctl show
+   52  ip a | grep qvbbfe96030-f8
+   53  neutron port-list 
+   54  history | grep pcap
+   55  tcpdump -i any host 54.236.116.26 and port 443 -w INWIN-compute.54.236.116.26.pcap
+   56  scp INWIN-compute.54.236.116.26.pcap jinseng@140.92.24.37:/tmp
+   57  tcpdump -i any host 54.236.116.26 and port 443 -w INWIN-compute.54.236.116.26.vm.pcap
+   58  rm INWIN-compute.54.236.116.26.vm.pcap 
+   59  tcpdump -i any host 54.236.116.26 and port 443 -w INWIN-compute.54.236.116.26.vm.pcap
+   60  rm INWIN-compute.54.236.116.26.vm.pcap 
+   61  tcpdump -i any host 54.236.116.26 and port 443 -w INWIN-compute.54.236.116.26.vm.pcap
+   62  tcpdump -i any (host 54.236.116.26 or host 52.22.122.48) and port 443 -w INWIN-compute.54.236.116.26.vm.pcap
+   63  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w INWIN-compute.54.236.116.26.vm.pcap
+   64  rm INWIN-compute.54.236.116.26.vm.pcap 
+   65  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w INWIN-compute.pivotal.io.vm.pcap
+   66  scp INWIN-compute.pivotal.io.vm.pcap jinseng@140.92.24.37:/tmp
+   67  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w INWIN-compute.pivotal.io.inwin.pcap
+   68  scp INWIN-compute.pivotal.io.inwin.pcap jinseng@140.92.24.37:/tmp
+   69  vi getting-pivotal.io 
+   70  tcpdump -i any 'host 54.236.116.26 or host 52.22.122.48' and port 443 -w INWIN-compute.pivotal.io.hp.pcap
+   71  scp INWIN-compute.pivotal.io.hp.pcap jinseng@140.92.24.37:/tmp
+   72  ip a | grep "state UP"
+   73  brctl show
+   74  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   75  tcpdump -i eth2 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   76  tcpdump -i eth1 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   77  tcpdump -i eth0 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   78  ls
+   79  exit
+   80  wget https://pivotal.io
+   81  clear
+   82  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.eth3.pcap
+   83  tcpdump -i any 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   84  tcpdump -i eth2 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.eth3.pcap
+   85  tcpdump -i eth0 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.eth3.pcap
+   86  tcpdump -i eth0 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   87  tcpdump -i eth1 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   88  tcpdump -i eth2 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   89  tcpdump -i eth3 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   90  brctl show
+   91  tcpdump -i br-ex 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   92  tcpdump -i br-fw-admin 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   93  tcpdump -i br-mesh 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   94  tcpdump -i br-mgmt 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   95  tcpdump -i br-storage 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   96  tcpdump -i br-qbr723879e7-2c 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   97  tcpdump -i qbrbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443
+   98  brctl show
+   99  ip a | grep "state UP"
+  100  ifconfig -a | grep eth
+  101  tcpdump -i eth0 port 443
+  102  tcpdump -i eth2 port 443
+  103  tcpdump -i eth3 port 443
+  104  clear
+  105  tcpdump -i qbrbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443 -w INWIN-compute.pivotal.io.qbrbfe96030-f8.pcap
+  106  scp INWIN-compute.pivotal.io.qbrbfe96030-f8.pcap jinseng@140.92.24.37:/tmp
+  107  route -n
+  108  tcpdump -l -i qbrbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443 | tee dat
+  109  tail dat 
+  110  rm dat
+  111  tcpdump -i br-ex 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  112  brctl show
+  113  tcpdump -i qvbbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  114  brctl show
+  115  tcpdump -i tapbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  116  ovs-vsctl show
+  117  ovs-vsctl show | grep qvbbfe96030-f8
+  118  ovs-vsctl show | grep tapbfe96030-f8
+  119  ovs-vsctl show | grep qbrbfe96030-f8
+  120  less  /etc/libvirt/qemu/instance-00000062.xml 
+  121  grep qvbbfe96030-f8  /etc/libvirt/qemu/instance-00000062.xml 
+  122  less  /etc/libvirt/qemu/instance-00000062.xml 
+  123  grep qvbbfe96030-f8  /etc/libvirt/qemu/instance-00000062.xml 
+  124  ip a | grep qvbbfe96030-f8
+  125  ip a
+  126  brctl show
+  127  ls /etc/network/
+  128  ls /etc/network/interfaces.d/
+  129  ls /etc/network/
+  130  cat /etc/network/interfaces
+  131  ls /etc/network/interfaces.d/
+  132  cat /etc/network/interfaces.d/ifcfg-p_ff798dba-0 
+  133  route -n
+  134  tcpdump -i br-ex
+  135  tcpdump -i br-ex port 443
+  136  tcpdump -i br-ex icmp
+  137  tcpdump -i any icmp
+  138  tcpdump -D
+  139  tcpdump -i p_ff798dba-0
+  140  tcpdump -i p_ff798dba-0 icmp
+  141  tcpdump -i tapbfe96030-f8 icmp
+  142  route -n
+  143  traceroute 192.168.0.113
+  144  tcpdump -i br-int icmp
+  145  brctl show
+  146  ovs-vsctl show
+  147  ovs-ofctl show br-int
+  148  route -n
+  149  exit
+  150  ifconfig | grep MTU
+  151  brctl show
+  152  ifconfig eth3 mtu 1600
+  153  ifconfig p_ff798dba-0 mtu 1600
+  154  ifconfig eth0 mtu 1600
+  155  ifconfig eth2.103 mtu 1600
+  156  ifconfig eth2 mtu 1600
+  157  ifconfig eth2.101 mtu 1600
+  158  ifconfig eth2.102 mtu 1600
+  159  ifconfig  mtu 1600
+  160  ifconfig | grep MTU
+  161  exit
+  162  ifconfig | less
+  163  ifconfig p_ff798dba-0
+  164  ifconfig p_ff798dba-0 mtu 65000
+  165  ifconfig | grep MTU
+  166  service ssh status
+  167  service ssh restart
+  168  ifconfig | grep MTU
+  169  brctl show
+  170  history | grep 1600
+  171  ifconfig eth3 mtu 1500
+  172  ifconfig eth0 mtu 1500
+  173  ifconfig eth2.103 mtu 1500
+  174  ifconfig eth2.101 mtu 1500
+  175  ifconfig eth2.102 mtu 1500
+  176  ifconfig | grep MTU
+  177  history | grep 1600
+  178  ifconfig p_ff798dba-0 mtu 1500
+  179  ifconfig | grep MTU
+  180  ifconfig p_ff798dba-0 mtu 65000
+  181  ifconfig | grep MTU
+  182  ifconfig | less
+  183  ifconfig eth2 mtu 1500
+  184  ifconfig | less
+  185  history | grep tcpdump
+  186  tcpdump -i qbrbfe96030-f8 'host 52.22.122.48 or host 54.236.116.26' and port 443
+  187  tcpdump -i any
+  188  brctl show
+  189  ifconfig | grep fa:16:3e:99:c2:ca
+  190  ifconfig | grep 99:c2:ca
+  191  tcpdump -i tapbfe96030-f8
+  192  tcpdump -i tapbfe96030-f8 host 52.22.122.48 and port 443
+  193  tcpdump -ni tapbfe96030-f8 host 52.22.122.48 and port 443
+  194  tcpdump -ni tapbfe96030-f8 ip src 52.22.122.48 and port 443
+  195  tcpdump -ni tapbfe96030-f8 ip src 52.22.122.48 and port 443 -X
+  196  tcpdump -ni tapbfe96030-f8 ip src 52.22.122.48 and port 443 -w 0802.inwin.pcap
+  197  scp 0802.inwin.pcap jinseng@140.92.24.37:/tmp
+  198  brctl show
+  199  tcpdump -ni tapbfe96030-f8 ip src 52.22.122.48 and port 443 -w 0802.inwin.pcap
+  200  ovs-vsctl show
+  201  ovs-vsctl show | grep qvbbfe96030-f8
+  202  ovs-vsctl show | grep bfe96030-f8
+  203  ovs-vsctl show | less
+  204  ifconfig br-tun
+  205  ovs-vsctl show | less
+  206  ifconfig | less
+  207  ip netns list
+  208  ifconfig | less
+  209  ip a | grep 192.168
+  210  brctl show
+  211  ovs-vsctl show
+  212  brctl show
+  213  tcpdump -i eth2 ip src 192.168.2.3
+  214  tcpdump -i eth2 ip src 192.168.2.3 -w eth2dump
+  215  scp eth2dump jinseng@140.92.24.37:/tmp
+  216  ifconfig qg-35101be5-3b
+  217  ip a
+  218  ovs-vsctl show
+  219  ifconfig br-int
+  220  ifconfig qvo723879e7-2c
+  221  ifconfig | grep 192.168
+  222  ifconfig
+  223  ifconfig eth2.103
+  224  ifconfig eth2.103 mtu 1600
+  225  ifconfig
+  226  ifconfig | grep MTU
+  227  ifconfig
+  228  ovs-vsctl show
+  229  ifconfig eth2
+  230  ifconfig eth2 mtu 1600
+  231  ifconfig eth2
+  232  tcpdump -i eth2 ip src 192.168.0.1
+  233  ifconfig
+  234  ifconfig eth2
+  235  ifconfig -i eth2 host 52.22.122.48 and port 443
+  236  tcpdump -i eth2 host 52.22.122.48 and port 443
+  237  tcpdump -i qbrbfe96030-f8 host 52.22.122.48 and port 443
+  238  ifconfig
+  239  ifconfig | less
+  240  ifconfig eth2.103 mtu 1600
+  241  ifconfig eth2.103
+  242  tcpdump -i eth2.103 inwin.eth2.103.pcap
+  243  tcpdump -i eth2.103 -w inwin.eth2.103.pcap
+  244  scp inwin.eth2.103.pcap jinseng@140.92.24.37:/tmp
+  245  ifconfig eth2.103
+  246  tcpdump -i eth2.103 ip src 192.168.2.3
+  247  tcpdump -i eth2.103 ip src 192.168.2.3 -w inwin.eth2.103.pcap 
+  248  scp inwin.eth2.103.pcap jinseng@140.92.24.37:/tmp
+  249  brctl show
+  250  ifconfig br-mesh
+  251  ifconfig eth2.103
+  252  ifconfig eth2
+  253  tcpdump -i br-mesh -w inwin.br-mesh.pcap 
+  254  scp inwin.br-mesh.pcap jinseng@140.92.24.37:/tmp
+  255  tcpdump -i eth2.103 ip src 192.168.2.3
+  256  tcpdump -i eth2.103 ip src 192.168.2.3 -nnn
+  257  tcpdump -i eth2.103 ip src 192.168.2.3 -nnn -e
+  258  tcpdump -i br-mesh -w inwin.br-mesh.pcap 
+  259  scp inwin.br-mesh.pcap jinseng@140.92.24.37:/tmp
+  260  ifconfig eth2.103
+  261  ifconfig br-int
+  262  brctl show
+  263  ifconfig br-mesh
+  264  ifconfig br-mesh mtu 1500
+  265  ifconfig eth2.103
+  266  ifconfig eth2.103 mtu 1500
+  267  ifconfig eth2.103
+  268  ifconfig br-mesh
+  269  exit
+  270  history | wc -l
+  271  history | less
+  272  history > inwin-compute.history
