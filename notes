@@ -33,5 +33,5 @@ root@705-ubuntu:/home/jinseng# ovs-vsctl show
 9d262fb1-54bd-4942-93f9-c161a2fecd56
     ovs_version: "2.0.2"
 
-
+root@705-ubuntu:/home/jinseng# ip netns list
 
