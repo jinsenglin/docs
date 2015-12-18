@@ -44,3 +44,6 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 172.17.0.0      0.0.0.0         255.255.0.0     U     0      0        0 docker0
 192.168.4.0     0.0.0.0         255.255.255.0   U     0      0        0 vmnet8
 192.168.122.0   0.0.0.0         255.255.255.0   U     0      0        0 virbr0
+
+http://unix.stackexchange.com/questions/40560/how-to-know-if-a-network-interface-is-tap-tun-bridge-or-physical
+The answer is to run ethtool -i tunOrTapDeviceName.
