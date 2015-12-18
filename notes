@@ -184,3 +184,40 @@ traceroute 54.164.213.58
 
 https://docs.cloudfoundry.org/running/troubleshooting/troubleshooting-apps.html
 http://docs.openstack.org/openstack-ops/content/network_troubleshooting.html
+
+[HP-controller] > ip netns list # list all network namespace
+[HP-controller] > ip netns exec qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d bash # enter router network namespace
+  [HP-controller] > enlarge MTU of the 192.168.0.1 interface from 1450 to 1600 (step 1/4)
+[HP-controller] > enlarge MTU of the 192.168.2.3 interface from 1500 to 1600 # br-mesh (step 2/4)
+[HP-controller] > enlarge MTU of the eth0.103 interface from 1500 to 1600 (step 3/4)
+[switch] > enable "jumbo frame" (step 4/4)
+
+
+[Container].w-196spv23c6m-1 (10.254.0.2 MTU 1500) <=> 
+[VM].eth0 (192.168.0.113 MTU 1500)<=> 
+[INWIN-compute].eth2.103 (MTU 1500) = [INWIN-compute].br-mesh (192.168.2.5 MTU 1500) <=>
+[switch] <=>
+[HP-controller].eth0.103 (MTU 1600) = [HP-controller].br-mesh (192.168.2.3 MTU 1600) <=> 
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qr-c85b8d9c-a2 (192.168.0.1 MTU 1600) <=>
+[HP-controller].qrouter-f734d62f-ea96-4095-aa9b-a120d0a6331d.qg-35101be5-3b (10.5.50.131 MTU 1450) <=>
+[HP-controller].eth3 (MTU 1500) = [HP-controller].br-ex (10.5.50.6 MTU 1500)
+[switch] <=>
+[firewall] <=>
+[internet] <=>
+[pivotal.io] <=>
+
+https://www.codatlas.com/github.com/cloudfoundry/cf-release/HEAD/jobs/dea_next/templates/warden.yml.erb
+network:
+  pool_start_address: 10.254.0.0
+  pool_size: 256
+  <% if_p("dea_next.deny_networks") do |deny_networks| %>
+  deny_networks: <%= deny_networks %>
+  <% end %>
+  <% if_p("dea_next.allow_networks") do |allow_networks| %>
+  allow_networks: <%= allow_networks %>
+  <% end %>
+  allow_host_access: <%= p("dea_next.allow_host_access") %>
+
+  # Interface MTU size
+  # (for OpenStack use 1454 to avoid problems with rubygems with GRE tunneling)
+  mtu: <%= p("dea_next.mtu") %>
