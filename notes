@@ -102,7 +102,6 @@ brctl addif kvmbr0 eth0 # Note that the kvmbr0 Linux bridge has only one interfa
     Finally, we can see that the Virtual NIC has been configured with IP address and gateway etc. 
     This configuration is done using the DHCP server on my physical router. 
     This implies that virtual NIC has external network connectivity.
-
 To summarize:
 - We created a Linux bridge and added a physical NIC interface of the host.
 - Then while creating a VM, we specified the Linux bridge to be used for virtual networking.
