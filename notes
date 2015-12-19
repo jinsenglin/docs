@@ -31,3 +31,9 @@
 1.1 開controller && neutron nodes
 1.2 開compute nodes && cinder/ceph/swift
 2. 開所有VM
+
+https://groups.google.com/a/cloudfoundry.org/forum/#!topic/bosh-users/Jx4CQmH8RaA
+https://bosh.io/docs/init-openstack.html
+https://github.com/cloudfoundry/docs-bosh/blob/master/resurrector.html.md.erb
+1. With bosh-init, to disable microbosh's resurrector
+2. With bosh, to stop cf's job and shutdown vm (bosh stop <job> --hard)
