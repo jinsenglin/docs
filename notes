@@ -91,6 +91,39 @@ ifconfig eth1:0 192.168.0.1
 此時兩個介面eth1和eth1:0的MAC是相同的
 
 https://wiki.ubuntu.com/vlan
+sudo modprobe 8021q
+sudo vconfig add eth1 10
+sudo ip addr add 10.0.0.1/24 dev eth1.10
+
+http://manpages.ubuntu.com/manpages/intrepid/man5/vlan-interfaces.5.html
+        iface eth0.1 inet static
+            address 192.168.1.1
+            netmask 255.255.255.0
+
+        iface vlan1 inet static
+            vlan-raw-device eth0
+            address 192.168.1.1
+            netmask 255.255.255.0
+
+        iface eth0.0001 inet static
+            address 192.168.1.1
+            netmask 255.255.255.0
+
+        iface vlan0001 inet static
+            vlan-raw-device eth0
+            address 192.168.1.1
+            netmask 255.255.255.0
+
+        # We don’t have br support out of the box
+        iface br0.2 inet static
+            vlan-raw-device br0
+            address 192.168.1.1
+            netmask 255.255.255.0
+
+        # Aliases are ignored
+        iface br0.2:1 inet static
+            address 192.168.1.1
+            netmask 255.255.255.255
 
 switch jumbo frame
 switch trunk port
