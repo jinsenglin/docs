@@ -157,6 +157,7 @@ https://wiki.ubuntu.com/vlan
 sudo modprobe 8021q
 sudo vconfig add eth1 10
 sudo ip addr add 10.0.0.1/24 dev eth1.10
+sudo vconfig rem eth1.10
 
 http://manpages.ubuntu.com/manpages/intrepid/man5/vlan-interfaces.5.html
         iface eth0.1 inet static
