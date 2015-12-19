@@ -74,6 +74,9 @@ http://blog.scottlowe.org/2014/03/21/a-follow-up-on-linux-network-namespaces/
 A Tutorial for Isolating Your System with Linux Namespaces
 http://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces
 
+Howto setup a `veth` virtual network
+http://superuser.com/questions/764986/howto-setup-a-veth-virtual-network
+
 VirutalBox :: Virtual networking
 https://www.virtualbox.org/manual/ch06.html
 
