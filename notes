@@ -83,7 +83,7 @@ ip link delete br0
 Understanding VLANs
 http://www.naturalborncoder.com/virtualization/2014/10/14/understanding-vlans/
 
-Linux Bridge and Virtual Networking
+Linux Bridge and Virtual Networking ***
 http://www.innervoice.in/blogs/2013/12/02/linux-bridge-virtual-networking/
 brctl addbr kvmbr0
 brctl addif kvmbr0 eth0 # Note that the kvmbr0 Linux bridge has only one interface at this time (eth0).
@@ -112,7 +112,7 @@ To summarize:
 - This shows that the traffic will flow from the VM’s virtual NIC to the vnet0 tap interface, 
   then onto the Linux bridge (virtual switch) which will send it out on the other virtual switch interface (eth0) on the host.
 
-Tap Interfaces and Linux Bridge
+Tap Interfaces and Linux Bridge ***
 http://www.innervoice.in/blogs/2013/12/08/tap-interfaces-linux-bridge/
 
 Tun/Tap interface tutorial
