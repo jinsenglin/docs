@@ -184,5 +184,6 @@ http://manpages.ubuntu.com/manpages/intrepid/man5/vlan-interfaces.5.html
 
 switch jumbo frame
 switch trunk port
+switch uplink port
 tag vs untag
 ovs bridge local port
