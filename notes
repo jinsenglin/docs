@@ -90,6 +90,7 @@ http://linux.vbird.org/linux_server/0230router/0230router.php#more_IPs
 
 https://wiki.ubuntu.com/vlan
 
+switch jumbo frame
 switch trunk port
 tag vs untag
 ovs bridge local port
