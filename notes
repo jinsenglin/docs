@@ -147,6 +147,12 @@ http://linux.vbird.org/linux_server/0230router/0230router.php#more_IPs
 ifconfig eth1:0 192.168.0.1
 此時兩個介面eth1和eth1:0的MAC是相同的
 
+Configure 802.1Q VLAN Tagging Using ip Commands
+https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Networking_Guide/sec-Configure_802_1Q_VLAN_Tagging_Using_the_Command_Line.html
+ip link add link eth0 name eth0.8 type vlan id 8
+ip -d link show eth0.8
+ip link delete eth0.8
+
 https://wiki.ubuntu.com/vlan
 sudo modprobe 8021q
 sudo vconfig add eth1 10
