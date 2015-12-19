@@ -85,6 +85,25 @@ http://www.naturalborncoder.com/virtualization/2014/10/14/understanding-vlans/
 
 Linux Bridge and Virtual Networking
 http://www.innervoice.in/blogs/2013/12/02/linux-bridge-virtual-networking/
+brctl addbr kvmbr0
+brctl addif kvmbr0 eth0 # Note that the kvmbr0 Linux bridge has only one interface at this time (eth0).
+This interface vnet0 is a virtual interface created by libvirt (VMM) as seen in the screenshot here. This virtual interface is also called a tap interface.
+Now just like you connect an Ethernet (RJ-45) cable from a physical NIC to an port (interface) on a physical switch, the VM’s virtual NIC is connected to this virtual tap interface on the Linux bridge.
+The first thing to notice is the similarities in the MAC address of vnet0 (on the host server) and the eth0 (virtual NIC in the VM).
+The next giveaway is the data transmitted and received on each of the interface. Since there is a direct 1-1 relationship, the TX bytes of the VM NIC matches the RX bytes of vnet0. And vice-versa.
+Finally, we can see that the Virtual NIC has been configured with IP address and gateway etc. This configuration is done using the DHCP server on my physical router. This implies that virtual NIC has external network connectivity.
+To summarize:
+- We created a Linux bridge and added a physical NIC interface of the host.
+- Then while creating a VM, we specified the Linux bridge to be used for virtual networking.
+- The Virtual Machine Manager (libvirt GUI) did some behind-the-scene work to associate the Virtual NIC to the Linux bridge and in turn to the Physical NIC.
+- We then observed how the VM’s virtual NIC is associated to the virtual tap interface on the host. And how the tap interface is added to the Linux bridge.
+- This shows that the traffic will flow from the VM’s virtual NIC to the vnet0 tap interface, then onto the Linux bridge (virtual switch) which will send it out on the other virtual switch interface (eth0) on the host.
+
+Tap Interfaces and Linux Bridge
+http://www.innervoice.in/blogs/2013/12/08/tap-interfaces-linux-bridge/
+
+Tun/Tap interface tutorial
+http://backreference.org/2010/03/26/tuntap-interface-tutorial/
 
 Introducing Linux Network Namespaces
 http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
