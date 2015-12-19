@@ -82,6 +82,7 @@ https://docs.docker.com/engine/userguide/networking/
 
 如何為網路找到適合的 MTU 大小
 http://www.tp-link.tw/FAQ-190.html
+ping www.tp-link.com -f -l 1472
 
 eth0 eth0.1 (vlan) eth0:1 (alias)
 
