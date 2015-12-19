@@ -64,6 +64,8 @@ ip addr add 10.0.0.10 dev ep1
 ip addr add 10.0.0.11 dev ep2
 ip link show
 ping -I 10.0.0.10 -c1 10.0.0.11
+ip link delete tap0
+ip link delete ep1 # ep2 也跟著被刪除了
 
 Understanding Bridges
 http://www.naturalborncoder.com/virtualization/2014/10/14/understanding-bridges/
