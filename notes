@@ -55,3 +55,18 @@ https://en.wikipedia.org/wiki/TUN/TAP
 TUN (namely network TUNnel) simulates a network layer device and it operates with layer 3 packets like IP packets.
 TAP (namely network tap) simulates a link layer device and it operates with layer 2 packets like Ethernet frames.
 TUN is used with routing, while TAP is used for creating a network bridge.
+
+Understanding TUN TAP Interfaces
+http://www.naturalborncoder.com/virtualization/2014/10/17/understanding-tun-tap-interfaces/
+
+Understanding Bridges
+http://www.naturalborncoder.com/virtualization/2014/10/14/understanding-bridges/
+
+Linux Bridge and Virtual Networking
+http://www.innervoice.in/blogs/2013/12/02/linux-bridge-virtual-networking/
+
+Introducing Linux Network Namespaces
+http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
+
+A Follow Up on Linux Network Namespaces
+http://blog.scottlowe.org/2014/03/21/a-follow-up-on-linux-network-namespaces/
