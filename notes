@@ -73,3 +73,9 @@ http://blog.scottlowe.org/2014/03/21/a-follow-up-on-linux-network-namespaces/
 
 A Tutorial for Isolating Your System with Linux Namespaces
 http://www.toptal.com/linux/separation-anxiety-isolating-your-system-with-linux-namespaces
+
+VirutalBox :: Virtual networking
+https://www.virtualbox.org/manual/ch06.html
+
+Docker networks feature overview
+https://docs.docker.com/engine/userguide/networking/
