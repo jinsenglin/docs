@@ -59,7 +59,7 @@ TUN is used with routing, while TAP is used for creating a network bridge.
 Understanding TUN TAP Interfaces
 http://www.naturalborncoder.com/virtualization/2014/10/17/understanding-tun-tap-interfaces/
 ip tuntap add name tap0 mode tap
-ip link add ep1 type veth peer name ep2
+ip link add ep1 type veth peer name ep2 #Creating Veth Pairs
 ip addr add 10.0.0.10 dev ep1
 ip addr add 10.0.0.11 dev ep2
 ip link show
