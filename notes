@@ -88,7 +88,7 @@ eth0 eth0.1 (vlan) eth0:1 (alias)
 多個 IP 在一塊網路卡上面 (IP Alias)
 http://linux.vbird.org/linux_server/0230router/0230router.php#more_IPs
 ifconfig eth1:0 192.168.0.1
-此時eth1和eth1:0的MAC是相同的
+此時兩個介面eth1和eth1:0的MAC是相同的
 
 https://wiki.ubuntu.com/vlan
 
