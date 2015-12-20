@@ -85,6 +85,10 @@ ip link delete br0
 Understanding VLANs
 http://www.naturalborncoder.com/virtualization/2014/10/14/understanding-vlans/
 
+Linux 設定 Vlan
+http://benjr.tw/93197
+透過 VLan 的功能能將一個實體的 switch 將他切割成多個 logical broadcast domain (所有的廣播封包 broadcast package 只會在此 doamin 中傳送).他的做法也很簡單就是在原先的訊框 (Frame) 指定 tag 而這 tag 的數字即是 VLAN ID. VLAN 已經被 IEEE 列為標准協定的一員 802.1q ,且一開始沒設定任何 VLAN 的 switch 其所有的網路埠的 VLAN ID 皆為 1.
+
 Linux Bridge and Virtual Networking ***
 http://www.innervoice.in/blogs/2013/12/02/linux-bridge-virtual-networking/
 brctl addbr kvmbr0
