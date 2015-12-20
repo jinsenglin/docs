@@ -137,6 +137,18 @@ https://www.virtualbox.org/manual/ch06.html
 
 Docker networks feature overview
 https://docs.docker.com/engine/userguide/networking/
+    Understand Docker container networks
+    https://docs.docker.com/engine/userguide/networking/dockernetworks/
+    docker network ls
+    The bridge network represents the docker0 network present in all Docker installations.
+    docker network inspect bridge
+    docker run --net=<NETWORK>
+        The containers you launch into this network must reside on the same Docker host. 
+        Each container in the network can immediately communicate with other containers in the network. 
+        Though, the network itself isolates the containers from external networks.
+    Docker’s overlay network driver supports multi-host networking natively out-of-the-box.
+    This support is accomplished with the help of libnetwork, 
+    a built-in VXLAN-based overlay network driver, and Docker’s libkv library.
 
 如何為網路找到適合的 MTU 大小
 http://www.tp-link.tw/FAQ-190.html
@@ -162,6 +174,17 @@ sudo modprobe 8021q
 sudo vconfig add eth1 10
 sudo ip addr add 10.0.0.1/24 dev eth1.10
 sudo vconfig rem eth1.10
+
+設定 docker0 橋接器
+https://philipzheng.gitbooks.io/docker_practice/content/advanced_network/docker0.html
+    Docker 服務預設會建立一個 docker0 橋接器（其上有一個 docker0 內部界面），
+    它在核心層連通了其他的物理或虛擬網卡，這就將所有容器和本地主機都放到同一個物理網路。
+    
+    Docker 預設指定了 docker0 界面 的 IP 位址和子網遮罩，
+    讓主機和容器之間可以透過橋接器相互通信，
+    它還給出了 MTU（界面允許接收的最大傳輸單元），
+    通常是 1500 Bytes，或宿主主機網路路由上支援的預設值。
+    這些值都可以在服務啟動的時候進行設定。
 
 http://manpages.ubuntu.com/manpages/intrepid/man5/vlan-interfaces.5.html
         iface eth0.1 inet static
