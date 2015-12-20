@@ -247,3 +247,6 @@ https://docs.cloudfoundry.org/concepts/architecture/warden.html#interact--warden
 https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2
 在計算機網絡中，網絡地址轉換（Network Address Translation，縮寫為NAT），
 也叫做網絡掩蔽或者IP掩蔽（IP masquerading），是一種在IP封包通過路由器或防火牆時重寫源IP地址或目的IP地址的技術。
+
+GRE 及其它通道技術 (GRE and other tunnels)
+http://www.study-area.org/tips/adv-route/Adv-Routing-HOWTO-5.html
