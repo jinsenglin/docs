@@ -245,8 +245,16 @@ https://docs.cloudfoundry.org/concepts/architecture/warden.html#interact--warden
     that become Linux iptable rules to filter and log outbound network traffic.
 
 https://zh.wikipedia.org/wiki/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2
-在計算機網絡中，網絡地址轉換（Network Address Translation，縮寫為NAT），
-也叫做網絡掩蔽或者IP掩蔽（IP masquerading），是一種在IP封包通過路由器或防火牆時重寫源IP地址或目的IP地址的技術。
+    在計算機網絡中，網絡地址轉換（Network Address Translation，縮寫為NAT），
+    也叫做網絡掩蔽或者IP掩蔽（IP masquerading），是一種在IP封包通過路由器或防火牆時重寫源IP地址或目的IP地址的技術。
 
 GRE 及其它通道技術 (GRE and other tunnels)
 http://www.study-area.org/tips/adv-route/Adv-Routing-HOWTO-5.html
+
+https://zh.wikipedia.org/wiki/%E9%9A%A7%E9%81%93%E5%8D%8F%E8%AE%AE
+    穿隧協議（英語：Tunneling Protocol）[1]是一種網路協議，
+    在其中，使用一種網路協議（傳送協議），將另一個不同的網路協議，封裝在負載部份。
+    使用隧道的原因是在不相容的網路上傳輸資料，或在不安全網路上提供一個安全路徑。
+    
+    一個被防火牆阻擋的協議可被包在另一個沒被防火牆阻擋的協議裡，如超文字傳輸協議。
+    如果防火牆並沒有排除此種包裝，這技巧可用來逃避防火牆政策。
