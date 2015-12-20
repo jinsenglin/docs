@@ -49,7 +49,7 @@ http://unix.stackexchange.com/questions/40560/how-to-know-if-a-network-interface
 The answer is to run ethtool -i tunOrTapDeviceName.
 
 Hub vs. Bridge vs. Switch
-https://i.ytimg.com/vi/Xmwmezk75Tk/maxresdefault.jpg
+https://i.ytimg.com/vi/Xmwmezk75Tk/maxresdefault.jpg ***
 
 https://en.wikipedia.org/wiki/TUN/TAP
 TUN (namely network TUNnel) simulates a network layer device and it operates with layer 3 packets like IP packets.
@@ -121,10 +121,10 @@ To summarize:
 Tap Interfaces and Linux Bridge ***
 http://www.innervoice.in/blogs/2013/12/08/tap-interfaces-linux-bridge/
 
-Tun/Tap interface tutorial
+Tun/Tap interface tutorial ***
 http://backreference.org/2010/03/26/tuntap-interface-tutorial/
 
-Introducing Linux Network Namespaces
+Introducing Linux Network Namespaces ***
 http://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/
 
 A Follow Up on Linux Network Namespaces
