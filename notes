@@ -230,3 +230,12 @@ http://www.coctec.com/docs/net/show-post-68146.html
     3. TOR交換機MAC表耗盡
     4. 多租戶場景
 vxlan(virtual Extensible LAN)虛擬可擴展區域網，是一種overlay的網路技術，使用MAC in UDP的方法進行封裝，共50位元組的封裝報文頭。
+
+https://docs.cloudfoundry.org/concepts/architecture/warden.html#interact--warden
+    The DEA for each Warden container assigns a dedicated virtual network interface 
+    that is one side of a virtual ethernet pair created on the host. 
+    The other side of the virtual ethernet pair is only visible on the host from the root namespace.
+    The pair is configured to use IPs in a small and static subnet. 
+    Traffic to and from the container is forwarded using NAT. 
+    Operators can configure global and container-specific network traffic rules 
+    that become Linux iptable rules to filter and log outbound network traffic.
