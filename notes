@@ -221,3 +221,12 @@ switch trunk port
 switch uplink port
 tag vs untag
 ovs bridge local port
+
+overlay網路技術之VXLAN詳解
+http://www.coctec.com/docs/net/show-post-68146.html
+為什麼需要Vxlan
+    1. vlan的數量限制
+    2. 物理網路基礎設施的限制
+    3. TOR交換機MAC表耗盡
+    4. 多租戶場景
+vxlan(virtual Extensible LAN)虛擬可擴展區域網，是一種overlay的網路技術，使用MAC in UDP的方法進行封裝，共50位元組的封裝報文頭。
