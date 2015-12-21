@@ -258,3 +258,9 @@ https://zh.wikipedia.org/wiki/%E9%9A%A7%E9%81%93%E5%8D%8F%E8%AE%AE
     
     一個被防火牆阻擋的協議可被包在另一個沒被防火牆阻擋的協議裡，如超文字傳輸協議。
     如果防火牆並沒有排除此種包裝，這技巧可用來逃避防火牆政策。
+
+SSH Tunnelling
+https://chamibuddhika.wordpress.com/2012/03/21/ssh-tunnelling-explained/
+- Local port forwarding
+- Remote port forwarding
+- Dynamic port forwarding
